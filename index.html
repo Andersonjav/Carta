@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 ¿Quieres ser mi Valentine? 💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="heartRain" class="screen active">
+        <div class="title-container">
+            <h1 class="pixel-title">💕 VALENTINE 💕</h1>
+            <p class="pixel-subtitle">Presiona cualquier tecla para comenzar...</p>
+        </div>
+        <canvas id="heartCanvas"></canvas>
+    </div>
+
+    <div id="yorkieScene" class="screen">
+        <div class="game-container">
+            <div class="yorkie-wrapper">
+                <div class="yorkie" id="yorkie">
+                    <div class="ear left"></div>
+                    <div class="ear right"></div>
+                    <div class="eye left"></div>
+                    <div class="eye right"></div>
+                    <div class="nose"></div>
+                    <div class="leg front-left"></div>
+                    <div class="leg front-right"></div>
+                    <div class="leg back-left"></div>
+                    <div class="leg back-right"></div>
+                    <div class="tail"></div>
+                </div>
+                <div class="ground"></div>
+            </div>
+            <div class="clouds">
+                <div class="cloud cloud1"></div>
+                <div class="cloud cloud2"></div>
+                <div class="cloud cloud3"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="questionScreen" class="screen">
+        <div class="question-container">
+            <div class="question-box">
+                <h2 class="question-text" id="questionText">¿Quieres ser mi Valentine?</h2>
+                <div class="buttons-container">
+                    <button id="yesBtn" class="game-btn yes-btn">SÍ</button>
+                    <button id="noBtn" class="game-btn no-btn">NO</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="successScreen" class="screen">
+        <div class="success-box">
+            <h2 class="success-title">¡Gracias por aceptar! 💕</h2>
+            <p>Tenemos casi 8 años de conocernos. </p>
+            <p>Queria sorprenderte con algo original y que nadie nuca te hubiera hecho.</p>
+            <p>¡Te Quiero! 💖</p>
+            <button class="coffee-btn-corner" id="coffeeBtn">☕ Apoyar</button>
+        </div>
+    </div>
+
+    <div id="clabeModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 class="modal-title">💕 Apoya este proyecto 💕</h2>
+            <div class="clabe-container">
+                <p>CLABE Interbancaria:</p>
+                <div class="clabe-display" id="clabeDisplay">000000000000000000</div>
+                <button class="copy-clabe-btn" id="copyClabeBtn">📋 Copiar CLABE</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Created by Anderson Salazar</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
